@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:helix="http://helix.qmul.ac.uk/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Dino">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ramon Dino</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brazilian</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#ModernClassic"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#ModernClassicPhil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#MassMonster">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:label>Mass Monster Era</rdfs:label>
+    <helix:startYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</helix:startYear>
+    <helix:endYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</helix:endYear>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#hasPrinciple">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <rdfs:label>hasPrinciple</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#belongsToEra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:label>belongsToEra</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Sandow">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eugen Sandow</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1894</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#PreGolden"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#ClassicalAesthetic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Nutrient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Nutrient</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#inspiresGoal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#PhysiqueGoal"/>
+    <rdfs:label>inspiresGoal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#PreGolden">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:label>Pre-Golden Era</rdfs:label>
+    <helix:startYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</helix:startYear>
+    <helix:endYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</helix:endYear>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#P_Logic">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <helix:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training should follow rational, scientific principles rather than tradition or volume for its own sake.</helix:description>
+    <helix:documentedIn rdf:resource="http://helix.qmul.ac.uk/ontology#HITMentzerWay"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#HeavyDuty2">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <helix:bookTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy Duty II: Mind and Body</helix:bookTitle>
+    <helix:publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</helix:publicationYear>
+    <helix:authoredBy rdf:resource="http://helix.qmul.ac.uk/ontology#Mentzer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Reeves">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steve Reeves</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1950</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#PreGolden"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#ClassicalAesthetic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Arnold">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arnold Schwarzenegger</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1975</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Austrian</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#GoldenAge"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HighVolume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Coleman">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ronnie Coleman</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#MassMonster"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HighVolume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#HeavyDuty">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <helix:bookTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy Duty</helix:bookTitle>
+    <helix:publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</helix:publicationYear>
+    <helix:authoredBy rdf:resource="http://helix.qmul.ac.uk/ontology#Mentzer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#documentedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <rdfs:label>documentedIn</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#endYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>endYear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Columbu">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Franco Columbu</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1976</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italian</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#GoldenAge"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HighVolume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Book">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Book</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#succeededBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:label>succeededBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Yates">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorian Yates</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#MassMonster"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HIT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#P_Intensity">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <helix:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training must reach maximal intensity — taking each set to momentary muscular failure.</helix:description>
+    <helix:documentedIn rdf:resource="http://helix.qmul.ac.uk/ontology#HeavyDuty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Cutler">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jay Cutler</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#MassMonster"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HighVolume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#P_Infrequency">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <helix:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training must be infrequent to allow full recovery between sessions.</helix:description>
+    <helix:documentedIn rdf:resource="http://helix.qmul.ac.uk/ontology#HeavyDuty2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Mentzer">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mike Mentzer</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1979</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#GoldenAge"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HIT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#CBum">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Bumstead</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canadian</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#ModernClassic"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#ModernClassicPhil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#GoldenAge">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:label>Golden Age</rdfs:label>
+    <helix:startYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</helix:startYear>
+    <helix:endYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</helix:endYear>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#HighVolume">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:label>High-Volume Training</rdfs:label>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_ProgressiveOverload"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#startYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>startYear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Principle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Principle</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#P_Recovery">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <helix:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recovery, not training, is the true limiting factor in muscle growth; the body grows during rest.</helix:description>
+    <helix:documentedIn rdf:resource="http://helix.qmul.ac.uk/ontology#HeavyDuty2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#authoredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:label>authoredBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#publicationYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>publicationYear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#followsPhilosophy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:label>followsPhilosophy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#recommendsNutrient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:range rdf:resource="http://helix.qmul.ac.uk/ontology#Nutrient"/>
+    <rdfs:label>recommendsNutrient</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#HIT">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:label>High-Intensity Training (Heavy Duty)</rdfs:label>
+    <helix:succeededBy rdf:resource="http://helix.qmul.ac.uk/ontology#HighVolume"/>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_Intensity"/>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_Brevity"/>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_Infrequency"/>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_Recovery"/>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_ProgressiveOverload"/>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_Logic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#ClassicalAesthetic">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:label>Classical Aesthetic Training</rdfs:label>
+    <helix:hasPrinciple rdf:resource="http://helix.qmul.ac.uk/ontology#P_ProgressiveOverload"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#peakYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>peakYear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#P_ProgressiveOverload">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <helix:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resistance must increase progressively over time to drive continued adaptation.</helix:description>
+    <helix:documentedIn rdf:resource="http://helix.qmul.ac.uk/ontology#HITMentzerWay"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Bodybuilder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bodybuilder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#fullName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>fullName</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#MentzerMethod">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <helix:bookTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Mentzer Method to Fitness</helix:bookTitle>
+    <helix:publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</helix:publicationYear>
+    <helix:authoredBy rdf:resource="http://helix.qmul.ac.uk/ontology#Mentzer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#P_Brevity">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Principle"/>
+    <helix:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workouts should be brief; excessive volume is counterproductive to growth.</helix:description>
+    <helix:documentedIn rdf:resource="http://helix.qmul.ac.uk/ontology#HeavyDuty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Zane">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank Zane</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1979</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#GoldenAge"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#ClassicalAesthetic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#PhysiqueGoal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>PhysiqueGoal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Park">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <helix:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reg Park</helix:fullName>
+    <helix:peakYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1958</helix:peakYear>
+    <helix:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British</helix:nationality>
+    <helix:belongsToEra rdf:resource="http://helix.qmul.ac.uk/ontology#PreGolden"/>
+    <helix:followsPhilosophy rdf:resource="http://helix.qmul.ac.uk/ontology#HighVolume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#nationality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Bodybuilder"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>nationality</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#ModernClassicPhil">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy"/>
+    <rdfs:label>Modern Classic Training</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#bookTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>bookTitle</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#TrainingPhilosophy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>TrainingPhilosophy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#HITMentzerWay">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Book"/>
+    <helix:bookTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High-Intensity Training the Mike Mentzer Way</helix:bookTitle>
+    <helix:publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</helix:publicationYear>
+    <helix:authoredBy rdf:resource="http://helix.qmul.ac.uk/ontology#Mentzer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#ModernClassic">
+    <rdf:type rdf:resource="http://helix.qmul.ac.uk/ontology#Era"/>
+    <rdfs:label>Modern Classic Era</rdfs:label>
+    <helix:startYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</helix:startYear>
+    <helix:endYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</helix:endYear>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://helix.qmul.ac.uk/ontology#Era">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Era</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

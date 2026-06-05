@@ -1,0 +1,275 @@
+@prefix helix: <http://helix.qmul.ac.uk/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+helix:Arnold a helix:Bodybuilder ;
+    helix:belongsToEra helix:GoldenAge ;
+    helix:followsPhilosophy helix:HighVolume ;
+    helix:fullName "Arnold Schwarzenegger"^^xsd:string ;
+    helix:nationality "Austrian"^^xsd:string ;
+    helix:peakYear 1975 .
+
+helix:CBum a helix:Bodybuilder ;
+    helix:belongsToEra helix:ModernClassic ;
+    helix:followsPhilosophy helix:ModernClassicPhil ;
+    helix:fullName "Chris Bumstead"^^xsd:string ;
+    helix:nationality "Canadian"^^xsd:string ;
+    helix:peakYear 2023 .
+
+helix:Coleman a helix:Bodybuilder ;
+    helix:belongsToEra helix:MassMonster ;
+    helix:followsPhilosophy helix:HighVolume ;
+    helix:fullName "Ronnie Coleman"^^xsd:string ;
+    helix:nationality "American"^^xsd:string ;
+    helix:peakYear 2003 .
+
+helix:Columbu a helix:Bodybuilder ;
+    helix:belongsToEra helix:GoldenAge ;
+    helix:followsPhilosophy helix:HighVolume ;
+    helix:fullName "Franco Columbu"^^xsd:string ;
+    helix:nationality "Italian"^^xsd:string ;
+    helix:peakYear 1976 .
+
+helix:Cutler a helix:Bodybuilder ;
+    helix:belongsToEra helix:MassMonster ;
+    helix:followsPhilosophy helix:HighVolume ;
+    helix:fullName "Jay Cutler"^^xsd:string ;
+    helix:nationality "American"^^xsd:string ;
+    helix:peakYear 2007 .
+
+helix:Dino a helix:Bodybuilder ;
+    helix:belongsToEra helix:ModernClassic ;
+    helix:followsPhilosophy helix:ModernClassicPhil ;
+    helix:fullName "Ramon Dino"^^xsd:string ;
+    helix:nationality "Brazilian"^^xsd:string ;
+    helix:peakYear 2024 .
+
+helix:MentzerMethod a helix:Book ;
+    helix:authoredBy helix:Mentzer ;
+    helix:bookTitle "The Mentzer Method to Fitness"^^xsd:string ;
+    helix:publicationYear 1980 .
+
+helix:Park a helix:Bodybuilder ;
+    helix:belongsToEra helix:PreGolden ;
+    helix:followsPhilosophy helix:HighVolume ;
+    helix:fullName "Reg Park"^^xsd:string ;
+    helix:nationality "British"^^xsd:string ;
+    helix:peakYear 1958 .
+
+helix:Reeves a helix:Bodybuilder ;
+    helix:belongsToEra helix:PreGolden ;
+    helix:followsPhilosophy helix:ClassicalAesthetic ;
+    helix:fullName "Steve Reeves"^^xsd:string ;
+    helix:nationality "American"^^xsd:string ;
+    helix:peakYear 1950 .
+
+helix:Sandow a helix:Bodybuilder ;
+    helix:belongsToEra helix:PreGolden ;
+    helix:followsPhilosophy helix:ClassicalAesthetic ;
+    helix:fullName "Eugen Sandow"^^xsd:string ;
+    helix:nationality "German"^^xsd:string ;
+    helix:peakYear 1894 .
+
+helix:Yates a helix:Bodybuilder ;
+    helix:belongsToEra helix:MassMonster ;
+    helix:followsPhilosophy helix:HIT ;
+    helix:fullName "Dorian Yates"^^xsd:string ;
+    helix:nationality "British"^^xsd:string ;
+    helix:peakYear 1995 .
+
+helix:Zane a helix:Bodybuilder ;
+    helix:belongsToEra helix:GoldenAge ;
+    helix:followsPhilosophy helix:ClassicalAesthetic ;
+    helix:fullName "Frank Zane"^^xsd:string ;
+    helix:nationality "American"^^xsd:string ;
+    helix:peakYear 1979 .
+
+helix:authoredBy a owl:ObjectProperty ;
+    rdfs:label "authoredBy" ;
+    rdfs:domain helix:Book ;
+    rdfs:range helix:Bodybuilder .
+
+helix:belongsToEra a owl:ObjectProperty ;
+    rdfs:label "belongsToEra" ;
+    rdfs:domain helix:Bodybuilder ;
+    rdfs:range helix:Era .
+
+helix:bookTitle a owl:DatatypeProperty ;
+    rdfs:label "bookTitle" ;
+    rdfs:domain helix:Book ;
+    rdfs:range xsd:string .
+
+helix:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:domain helix:Principle ;
+    rdfs:range xsd:string .
+
+helix:documentedIn a owl:ObjectProperty ;
+    rdfs:label "documentedIn" ;
+    rdfs:domain helix:Principle ;
+    rdfs:range helix:Book .
+
+helix:endYear a owl:DatatypeProperty ;
+    rdfs:label "endYear" ;
+    rdfs:domain helix:Era ;
+    rdfs:range xsd:integer .
+
+helix:followsPhilosophy a owl:ObjectProperty ;
+    rdfs:label "followsPhilosophy" ;
+    rdfs:domain helix:Bodybuilder ;
+    rdfs:range helix:TrainingPhilosophy .
+
+helix:fullName a owl:DatatypeProperty ;
+    rdfs:label "fullName" ;
+    rdfs:domain helix:Bodybuilder ;
+    rdfs:range xsd:string .
+
+helix:hasPrinciple a owl:ObjectProperty ;
+    rdfs:label "hasPrinciple" ;
+    rdfs:domain helix:TrainingPhilosophy ;
+    rdfs:range helix:Principle .
+
+helix:inspiresGoal a owl:ObjectProperty ;
+    rdfs:label "inspiresGoal" ;
+    rdfs:domain helix:Bodybuilder ;
+    rdfs:range helix:PhysiqueGoal .
+
+helix:nationality a owl:DatatypeProperty ;
+    rdfs:label "nationality" ;
+    rdfs:domain helix:Bodybuilder ;
+    rdfs:range xsd:string .
+
+helix:peakYear a owl:DatatypeProperty ;
+    rdfs:label "peakYear" ;
+    rdfs:domain helix:Bodybuilder ;
+    rdfs:range xsd:integer .
+
+helix:publicationYear a owl:DatatypeProperty ;
+    rdfs:label "publicationYear" ;
+    rdfs:domain helix:Book ;
+    rdfs:range xsd:integer .
+
+helix:recommendsNutrient a owl:ObjectProperty ;
+    rdfs:label "recommendsNutrient" ;
+    rdfs:domain helix:TrainingPhilosophy ;
+    rdfs:range helix:Nutrient .
+
+helix:startYear a owl:DatatypeProperty ;
+    rdfs:label "startYear" ;
+    rdfs:domain helix:Era ;
+    rdfs:range xsd:integer .
+
+helix:succeededBy a owl:ObjectProperty ;
+    rdfs:label "succeededBy" ;
+    rdfs:domain helix:TrainingPhilosophy ;
+    rdfs:range helix:TrainingPhilosophy .
+
+helix:Nutrient a owl:Class ;
+    rdfs:label "Nutrient" .
+
+helix:P_Brevity a helix:Principle ;
+    helix:description "Workouts should be brief; excessive volume is counterproductive to growth."^^xsd:string ;
+    helix:documentedIn helix:HeavyDuty .
+
+helix:P_Infrequency a helix:Principle ;
+    helix:description "Training must be infrequent to allow full recovery between sessions."^^xsd:string ;
+    helix:documentedIn helix:HeavyDuty2 .
+
+helix:P_Intensity a helix:Principle ;
+    helix:description "Training must reach maximal intensity — taking each set to momentary muscular failure."^^xsd:string ;
+    helix:documentedIn helix:HeavyDuty .
+
+helix:P_Logic a helix:Principle ;
+    helix:description "Training should follow rational, scientific principles rather than tradition or volume for its own sake."^^xsd:string ;
+    helix:documentedIn helix:HITMentzerWay .
+
+helix:P_Recovery a helix:Principle ;
+    helix:description "Recovery, not training, is the true limiting factor in muscle growth; the body grows during rest."^^xsd:string ;
+    helix:documentedIn helix:HeavyDuty2 .
+
+helix:PhysiqueGoal a owl:Class ;
+    rdfs:label "PhysiqueGoal" .
+
+helix:HIT a helix:TrainingPhilosophy ;
+    rdfs:label "High-Intensity Training (Heavy Duty)" ;
+    helix:hasPrinciple helix:P_Brevity,
+        helix:P_Infrequency,
+        helix:P_Intensity,
+        helix:P_Logic,
+        helix:P_ProgressiveOverload,
+        helix:P_Recovery ;
+    helix:succeededBy helix:HighVolume .
+
+helix:HITMentzerWay a helix:Book ;
+    helix:authoredBy helix:Mentzer ;
+    helix:bookTitle "High-Intensity Training the Mike Mentzer Way"^^xsd:string ;
+    helix:publicationYear 2003 .
+
+helix:HeavyDuty a helix:Book ;
+    helix:authoredBy helix:Mentzer ;
+    helix:bookTitle "Heavy Duty"^^xsd:string ;
+    helix:publicationYear 1993 .
+
+helix:HeavyDuty2 a helix:Book ;
+    helix:authoredBy helix:Mentzer ;
+    helix:bookTitle "Heavy Duty II: Mind and Body"^^xsd:string ;
+    helix:publicationYear 2002 .
+
+helix:ModernClassic a helix:Era ;
+    rdfs:label "Modern Classic Era" ;
+    helix:endYear 2026 ;
+    helix:startYear 2010 .
+
+helix:ModernClassicPhil a helix:TrainingPhilosophy ;
+    rdfs:label "Modern Classic Training" .
+
+helix:ClassicalAesthetic a helix:TrainingPhilosophy ;
+    rdfs:label "Classical Aesthetic Training" ;
+    helix:hasPrinciple helix:P_ProgressiveOverload .
+
+helix:MassMonster a helix:Era ;
+    rdfs:label "Mass Monster Era" ;
+    helix:endYear 2010 ;
+    helix:startYear 1990 .
+
+helix:P_ProgressiveOverload a helix:Principle ;
+    helix:description "Resistance must increase progressively over time to drive continued adaptation."^^xsd:string ;
+    helix:documentedIn helix:HITMentzerWay .
+
+helix:PreGolden a helix:Era ;
+    rdfs:label "Pre-Golden Era" ;
+    helix:endYear 1960 ;
+    helix:startYear 1900 .
+
+helix:GoldenAge a helix:Era ;
+    rdfs:label "Golden Age" ;
+    helix:endYear 1990 ;
+    helix:startYear 1960 .
+
+helix:Mentzer a helix:Bodybuilder ;
+    helix:belongsToEra helix:GoldenAge ;
+    helix:followsPhilosophy helix:HIT ;
+    helix:fullName "Mike Mentzer"^^xsd:string ;
+    helix:nationality "American"^^xsd:string ;
+    helix:peakYear 1979 .
+
+helix:HighVolume a helix:TrainingPhilosophy ;
+    rdfs:label "High-Volume Training" ;
+    helix:hasPrinciple helix:P_ProgressiveOverload .
+
+helix:Era a owl:Class ;
+    rdfs:label "Era" .
+
+helix:Book a owl:Class ;
+    rdfs:label "Book" .
+
+helix:Principle a owl:Class ;
+    rdfs:label "Principle" .
+
+helix:TrainingPhilosophy a owl:Class ;
+    rdfs:label "TrainingPhilosophy" .
+
+helix:Bodybuilder a owl:Class ;
+    rdfs:label "Bodybuilder" .
+

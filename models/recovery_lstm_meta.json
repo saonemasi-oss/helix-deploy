@@ -1,0 +1,13 @@
+{
+  "features": [
+    "LoadIndex",
+    "RestIndex",
+    "TotalSteps_n",
+    "Calories_n",
+    "VeryActiveMinutes",
+    "SedentaryShare",
+    "SleepEfficiency"
+  ],
+  "window": 7,
+  "target": "Readiness"
+}

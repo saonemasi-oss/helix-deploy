@@ -1,0 +1,19 @@
+[
+  "Age",
+  "Weight_kg",
+  "Height_m",
+  "Max_BPM",
+  "Avg_BPM",
+  "Resting_BPM",
+  "Session_Duration_hours",
+  "Calories_Burned",
+  "Water_Intake_liters",
+  "Workout_Frequency_days_per_week",
+  "Experience_Level",
+  "BMI",
+  "Calorie_Efficiency",
+  "Cal_per_kg_per_hr",
+  "HRR",
+  "Training_Intensity_Index",
+  "Freq_x_Exp"
+]
